@@ -24,4 +24,4 @@ setInterval(() => {
   }
   document.getElementById('slide' + contador).checked = true;
 
-}, 3000);
+}, 4000);
