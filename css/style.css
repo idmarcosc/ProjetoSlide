@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(72deg, #2a2a2a 35%, #909090, #5c5c5c 90%);
+  background-repeat: no-repeat;
+}
+
+.main{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: auto;
+  max-width: 700px;
+  border-radius: 20px;
+  margin: 0 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.content .slide img {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.barNav{
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  margin: 6px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.barNav:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  display: none;
+}
+
+.slides{
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide{
+  width: 20%;
+  transition: .7s ease;
+}
+
+#slide1:checked ~ .first{
+  margin-left: 0;
+}
+#slide2:checked ~ .first{
+  margin-left: -20%;
+}
+#slide3:checked ~ .first{
+  margin-left: -40%;
+}
+#slide4:checked ~ .first{
+  margin-left:-60%;
+}
+#slide5:checked ~ .first{
+  margin-left: -80%;
+}
